@@ -8,14 +8,15 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>新闻中国</title>
 <link href="css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src = "<%=path%>/js/indexCheck.js"></script>
 </head>
 <body>
 <div id="header">
   <div id="top_login">
       <form id="login" method="post" action="<%=path %>/loginServlet">
         	<label>登录名</label><input type="text" name="username" value="" class="login_input" />
-            <label>密&#160;&#160;码</label><input type="password" name="upwd" value="" class="login_input" />
-            <input type="submit" class="login_sub" value="登录" onclick="return indexCheck();" />
+            <label>密&#160;&#160;码</label><input type="password" name="password" value="" class="login_input" />
+            <input type="submit" class="login_sub" value="登录" onclick="return check();" />
         </form>
     <img src="images/friend_logo.gif" alt="Google" id="friend_logo" /> 
   </div>
@@ -130,3 +131,4 @@
 </div>
 </body>
 </html>
+
